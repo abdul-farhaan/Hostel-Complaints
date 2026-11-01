@@ -438,21 +438,51 @@ textarea:focus {
   margin-top: 22px;
 }
 
+/* ---------- Collapsible demo accounts ---------- */
+
 .demo-accounts {
-  margin-top: 22px;
-  padding: 14px 16px;
-  border-radius: 10px;
-  background-color: #f6f3ee;
-  font-size: 13px;
+    margin-top: 22px;
+    padding: 14px 16px;
+    border: 1px solid #d6cec2;
+    border-radius: 10px;
+    background-color: #e8e1d7;
+    font-size: 13px;
 }
 
-.demo-accounts p {
-  margin: 0;
+.demo-accounts > summary {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    list-style: none;
+    width: 100%;
 }
 
-.demo-accounts ul {
-  margin: 6px 0 0;
-  padding-left: 18px;
+.demo-accounts > summary::-webkit-details-marker {
+    display: none !important;
+}
+
+.demo-accounts > summary::marker {
+    content: "";
+}
+
+.demo-accounts > summary h3 {
+    display: inline-block !important;
+    margin: 0 !important;
+    font-size: 17px;
+}
+
+.demo-accounts > summary::after {
+    content: "+";
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.demo-accounts[open] > summary::after {
+    content: "−";
 }
 
 /* ---------- Summary strip ---------- */

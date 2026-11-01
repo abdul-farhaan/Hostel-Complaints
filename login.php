@@ -53,15 +53,28 @@ $lastLoginId = isset($_SESSION["lastLoginId"]) ? $_SESSION["lastLoginId"] : "";
 
             <p id="login-message" class="form-message is-error" aria-live="polite"></p>
 
-            <div class="demo-accounts">
+            <details class="demo-accounts">
+            <summary>
                 <h3>Demo accounts</h3>
+            </summary>
+            <div class="demo-content">
                 <p>Password for every account: <code>hostel123</code></p>
                 <ul>
-                    <li><code>24JE9101</code>, <code>24JE9102</code>, <code>24JE9103</code>: demo students</li>
-                    <li><code>24JE0134</code>, <code>24JE0312</code>, <code>24JE0369</code>: team members (students)</li>
-                    <li><code>warden</code>, <code>maintenance</code>: hostel staff (update complaint status)</li>
+                    <li>
+                        <code>24JE9101</code>, <code>24JE9102</code>,
+                        <code>24JE9103</code>: demo students
+                    </li>
+                    <li>
+                        <code>24JE0134</code>, <code>24JE0312</code>,
+                        <code>24JE0369</code>: team members (students)
+                    </li>
+                    <li>
+                        <code>warden</code>, <code>maintenance</code>:
+                        hostel staff (update complaint status)
+                    </li>
                 </ul>
             </div>
+            </details>
         </section>
     </div>
 
