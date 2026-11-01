@@ -13,7 +13,7 @@ Nothing else is used.
 ## Setup (same XAMPP configuration as Lab 9 and the Extra Lab)
 
 1. Configure XAMPP as in the lab manuals: Apache on port **8080** (Lab 9 §3.2) and MariaDB on
-   port **3307** (Extra Lab §4.1–4.3). Start **Apache** and **MySQL** from `xampp-control.exe`.
+   port **3306** (Extra Lab §4.1–4.3). Start **Apache** and **MySQL** from `xampp-control.exe`.
 2. Open `http://localhost:8080/phpmyadmin/`, click the server name (so no database is selected),
    open the **SQL** tab, paste the contents of `setup.sql` and click **Go**.
 3. Copy the whole `hostel_complaints` folder into `xampp\htdocs\`.
@@ -71,7 +71,7 @@ A few standard functions beyond the manuals are used:
 hostel_complaints/
 ├── EXPLANATION.md         detailed explanation of how everything works
 ├── setup.sql              database, tables and demo data
-├── db.php                 PDO connection (port 3307, as in the Extra Lab)
+├── db.php                 PDO connection (port 3306, as in the Extra Lab)
 ├── auth.php               session start, login/role checks, request token, flash messages
 ├── functions.php          status order, summary counts, progress bar, staff buttons, JSON helpers
 ├── header.php / footer.php     shared page top and bottom
